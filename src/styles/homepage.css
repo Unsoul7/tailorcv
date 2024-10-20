@@ -1,18 +1,20 @@
-.hero-section-home-page{
+.hero-section-home-page {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    height: 85vh;
+    
 }
 
-.hero-container{
+.hero-container {
     position: relative;
     width: 40%;
     padding: 20px;
 }
 
-#parallelogram-1{
+#parallelogram-1 {
     background: rgba(255, 67, 99, 0.315);
-    width:300px;
+    width: 300px;
     height: 400px;
     border-radius: 20px;
     transform: skewY(-25deg);
@@ -21,14 +23,63 @@
     margin: 40px;
 }
 
-#parallelogram-2{
+#parallelogram-2 {
     background: rgba(238, 130, 238, 0.452);
-    width:300px;
+    width: 300px;
     height: 400px;
     border-radius: 20px;
-    transform: scale(-1,-1) skewY(-25deg);
+    transform: scale(-1, -1) skewY(-25deg);
     position: absolute;
     right: 5%;
-mix-blend-mode: multiply;
-margin: 40px;
+    mix-blend-mode: multiply;
+    margin: 40px;
+}
+
+.hero-container:first-child{
+    width: 40%;
+}
+
+.hero-container:nth-child(2){
+    padding: 0;
+width: 60%;
+}
+
+.hero-container:nth-child(2) h1{
+    font-size: 4vmax;
+}
+
+
+.hero-container:nth-child(2) p{
+    font-size: 2vmax;
+    line-height: 40px;
+    margin-bottom: 60px;
+}
+
+#create-resume-btn{
+    color: white;
+    background: linear-gradient(to right,rgba(255, 111, 59, 0.801),rgba(255, 9, 9, 0.856));
+    padding: 15px 60px;
+    font-size: 2vmax;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.about-para{
+    padding: 0 3rem;
+    font-size: 1.5vmax;
+    line-height: 30px;
+}
+
+
+.templates-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:8rem ;
+}
+
+.templates-section h1{
+    text-align: center;
+    font-size: 3vmax;
+    width: 60%;
 }
